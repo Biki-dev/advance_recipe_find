@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #B99C78;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.nav-logo img {
+  height: 60px;
+  
+}
+
+.nav-text h2{
+  color: #ab6e24;
+  align-items: center;
+  font-family: "Knewave", system-ui; font-weight: 400; font-style: normal;
+  
+}
+.dropmenu {
+  position: relative;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.burger-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.burger-line {
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background: #905630;
+  transition: 0.3s;
+}
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 36px;
+  position: relative;
+  top: 0px;
+  outline: none;
+  webkit-tap-highlight-color: transparent;
+}
+
+.burger-bun-top,
+.burger-filling,
+.burger-bun-bot {
+  display: block;
+  height: 4px;
+  width: 36px;
+  border-radius: 2px;
+  background: #905630;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-bun-top {
+  transform: translateY(-8px);
+}
+
+.burger-bun-bot {
+  transform: translateY(8px);
+}
+
+.mobile-menu {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background: white;
+  box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-menu a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-overlay {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    width: 200px;
+  }
+}

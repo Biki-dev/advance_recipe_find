@@ -1,0 +1,86 @@
+.ai-suggest-container {
+  text-align: center;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+.scroll-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  
+}
+
+/* Hide scrollbar for Chrome, Safari */
+.card-container::-webkit-scrollbar {
+  display: none;
+  
+}
+.recipe-card {
+  flex: 0 0 auto;
+  width: 200px; /* Decreased width */
+  height: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 90%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.view-recipe-btn {
+  background-color: #ff7b00;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Centered Scroll Buttons Below the Cards */
+.scroll-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.scroll-btn {
+  background: #a16b4c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 100%;
+  transition: 0.3s;
+  height: auto;
+  width: 48px;
+}
+
+.scroll-btn:hover {
+  background: #6F452C;
+}

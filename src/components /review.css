@@ -1,0 +1,102 @@
+.review-sectionp {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff3e0;
+  position: relative;
+}
+
+.review-sectionp h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.reviews-containerp {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.reviews-containerp::-webkit-scrollbar {
+  display: none;
+}
+
+.review-cardp {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  min-width: 250px;
+  transition: transform 0.3s;
+}
+
+.review-cardp:hover {
+  transform: translateY(-5px);
+}
+
+.review-cardp img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.review-cardp h3 {
+  font-size: 1.2rem;
+  color: #ff7b00;
+}
+
+.review-cardp p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.ratingp {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ffcc00;
+}
+
+/* Scroll Buttons - Positioned at the Bottom Center */
+.scroll-buttonsp {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.scroll-btnp {
+  background: #a16b4c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 100%;
+  transition: 0.3s;
+  height: auto;
+  width: 48px;
+}
+
+.scroll-btnp:hover {
+  background: #6F452C;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reviews-containerp {
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .scroll-buttonsp {
+    margin-top: 10px;
+  }
+}
