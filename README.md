@@ -1,31 +1,112 @@
-# Create React App
+##  Recipe Find
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+An website showing recipe of avl ingrediants. Built with React, Vite and deployed via Vercel.
 
-## Deploy Your Own
+🔗 Live Demo: [View Website](https://advancerecipefind-p22atl3yx-narutos-projects-6bc0d28d.vercel.app)
 
-Deploy your own Create React App project with Vercel.
+---
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/create-react-app&template=create-react-app)
+## 🛠 Tech Stack
 
-_Live Example: https://create-react-template.vercel.app/_
+Frontend: React, Vite
+Styling: CSS
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📂 Project Structure
 
-### `npm start`
+```
+Advance_recipe_find/  
+│── public/             # Static assets  
+│── src/                # Source code  
+│   ├── components/     # React components  
+│   ├── pages/          # Page components  
+│   ├── App.jsx         # Main app file  
+│   ├── main.jsx        # Entry point0  
+│── dist/               # Build files (after build) 
+│── index.html          # HTML entry point  
+│── vite.config.js      # Vite configuration  
+│── package.json        # Dependencies & scripts  
+│── README.md           # Documentation
+```
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+## ⚙️ Installation
 
-### `npm test`
+1. Clone the repo:
 
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```git clone https://github.com/Biki-dev/advance_recipe_find.git
+cadvance_recipe_find
+```
 
-### `npm run build`
+2. Install dependencies:
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.
+3. Start the server:
+```
+npm run dev
+```
 
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+4. Open http://localhost:5173/
+
+---
+
+## 🚀 Deployment (GitHub Pages)
+
+1. Build the project:
+```
+npm run build
+```
+
+2. Install gh-pages:
+```
+npm install gh-pages --save-dev
+```
+
+3. Add these scripts to package.json:
+```
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+```
+
+4. Deploy:
+```
+npm run deploy
+```
+
+5. Enable GitHub Pages in repo settings (Set branch to gh-pages).
+
+---
+
+## 🔧 Troubleshooting
+
+If you see a blank page after deployment, update vite.config.js:
+```
+export default defineConfig({
+  base: '/advance_recipe_find',
+});
+```
+
+Rebuild & deploy:
+```
+npm run build && npm run deploy
+```
+
+Clear cache and refresh.
+
+---
+
+## 📜 License
+
+MIT Licensed – Contributions welcome!
+
+Made with ❤️ by Biki Kalita
+
+
+---
+
