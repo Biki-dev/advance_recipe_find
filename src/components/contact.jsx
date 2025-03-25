@@ -64,6 +64,7 @@ const Contact = () => {
         <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
         <textarea id="msg" name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} required></textarea>
 
+
         {/* Google reCAPTCHA */}
         <ReCAPTCHA sitekey="6LeRY_0qAAAAALIqPV6jPfUvzRGjctbhfWcBfajT" onChange={handleRecaptchaChange} />
 
