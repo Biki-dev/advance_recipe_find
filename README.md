@@ -37,7 +37,7 @@ Advance_recipe_find/
 1. Clone the repo:
 
 ```git clone https://github.com/Biki-dev/advance_recipe_find.git
-cadvance_recipe_find
+cd advance_recipe_find
 ```
 
 2. Install dependencies:
